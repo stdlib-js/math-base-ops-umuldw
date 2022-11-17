@@ -30,17 +30,33 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-ops-umuldw
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@esm/index.mjs';
+var umuldw = require( '@stdlib/math-base-ops-umuldw' );
 ```
 
-#### umuldw( \[out,] a, b )
+#### umuldw( a, b )
 
 Multiplies two unsigned 32-bit integers and returns an `array` of two unsigned 32-bit integers (in big endian order) which represents the unsigned 64-bit integer product.
 
@@ -50,6 +66,20 @@ var v = umuldw( 1, 10 );
 
 v = umuldw( 0x80000000, 0x80000000 ); // 2^31 * 2^31 = 4611686018427388000 => 32-bit integer overflow
 // returns [ 1073741824, 0 ]
+```
+
+#### umuldw.assign( a, b, out, stride, offset )
+
+Multiplies two unsigned 32-bit integers and assigns results representing the unsigned 64-bit integer product (in big endian order) to a provided output array.
+
+```javascript
+var out = [ 0, 0 ];
+
+var v = umuldw.assign( 1, 10, out, 1, 0 );
+// returns [ 0, 10 ]
+
+var bool = ( v === out );
+// returns true
 ```
 
 </section>
@@ -72,14 +102,9 @@ v = umuldw( 0x80000000, 0x80000000 ); // 2^31 * 2^31 = 4611686018427388000 => 32
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-left-pad@esm/index.mjs';
-import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@esm/index.mjs';
+```javascript
+var lpad = require( '@stdlib/string-left-pad' );
+var umuldw = require( '@stdlib/math-base-ops-umuldw' );
 
 var i;
 var j;
@@ -91,10 +116,6 @@ for ( i = 0xFFFFFFF0; i < 0xFFFFFFFF; i++ ) {
         console.log( '%d x %d = 0x%s%s', i, j, lpad( y[0].toString( 16 ), 8, '0' ), lpad( y[1].toString( 16 ), 8, '0' ) );
     }
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -125,7 +146,7 @@ for ( i = 0xFFFFFFF0; i < 0xFFFFFFFF; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -185,13 +206,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-ops-umuldw/main/LICENSE
 
-[@stdlib/constants/float64/max-safe-integer]: https://github.com/stdlib-js/constants-float64-max-safe-integer/tree/esm
+[@stdlib/constants/float64/max-safe-integer]: https://github.com/stdlib-js/constants-float64-max-safe-integer
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/ops/imuldw]: https://github.com/stdlib-js/math-base-ops-imuldw/tree/esm
+[@stdlib/math/base/ops/imuldw]: https://github.com/stdlib-js/math-base-ops-imuldw
 
-[@stdlib/math/base/ops/umul]: https://github.com/stdlib-js/math-base-ops-umul/tree/esm
+[@stdlib/math/base/ops/umul]: https://github.com/stdlib-js/math-base-ops-umul
 
 <!-- </related-links> -->
 
