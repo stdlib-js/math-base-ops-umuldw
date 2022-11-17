@@ -56,7 +56,7 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 var umuldw = require( '@stdlib/math-base-ops-umuldw' );
 ```
 
-#### umuldw( \[out,] a, b )
+#### umuldw( a, b )
 
 Multiplies two unsigned 32-bit integers and returns an `array` of two unsigned 32-bit integers (in big endian order) which represents the unsigned 64-bit integer product.
 
@@ -66,6 +66,20 @@ var v = umuldw( 1, 10 );
 
 v = umuldw( 0x80000000, 0x80000000 ); // 2^31 * 2^31 = 4611686018427388000 => 32-bit integer overflow
 // returns [ 1073741824, 0 ]
+```
+
+#### umuldw.assign( a, b, out, stride, offset )
+
+Multiplies two unsigned 32-bit integers and assigns results representing the unsigned 64-bit integer product (in big endian order) to a provided output array.
+
+```javascript
+var out = [ 0, 0 ];
+
+var v = umuldw.assign( 1, 10, out, 1, 0 );
+// returns [ 0, 10 ]
+
+var bool = ( v === out );
+// returns true
 ```
 
 </section>
