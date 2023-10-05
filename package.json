@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.1.0",
-    "@stdlib/assert-has-own-property": "^0.1.0",
+    "@stdlib/assert-has-own-property": "^0.1.1",
     "@stdlib/bench": "^0.1.0",
     "@stdlib/random-base-minstd": "^0.1.0",
     "@stdlib/string-left-pad": "^0.1.0",
