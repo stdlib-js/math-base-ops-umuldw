@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@deno/mod.js';
+import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@v0.2.0-deno/mod.js';
 ```
 
 #### umuldw( a, b )
@@ -105,7 +105,7 @@ var bool = ( v === out );
 
 ```javascript
 import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-left-pad@deno/mod.js';
-import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@deno/mod.js';
+import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@v0.2.0-deno/mod.js';
 
 var i;
 var j;
