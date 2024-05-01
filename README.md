@@ -41,32 +41,20 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-ops-umuldw
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var umuldw = require( '@stdlib/math-base-ops-umuldw' );
+import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@esm/index.mjs';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@esm/index.mjs';
 ```
 
 #### umuldw( a, b )
@@ -115,9 +103,14 @@ var bool = ( v === out );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var lpad = require( '@stdlib/string-left-pad' );
-var umuldw = require( '@stdlib/math-base-ops-umuldw' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-left-pad@esm/index.mjs';
+import umuldw from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-umuldw@esm/index.mjs';
 
 var i;
 var j;
@@ -129,6 +122,10 @@ for ( i = 0xFFFFFFF0; i < 0xFFFFFFFF; i++ ) {
         console.log( '%d x %d = 0x%s%s', i, j, lpad( y[0].toString( 16 ), 8, '0' ), lpad( y[1].toString( 16 ), 8, '0' ) );
     }
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -159,7 +156,7 @@ for ( i = 0xFFFFFFF0; i < 0xFFFFFFFF; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -222,13 +219,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-ops-umuldw/main/LICENSE
 
-[@stdlib/constants/float64/max-safe-integer]: https://github.com/stdlib-js/constants-float64-max-safe-integer
+[@stdlib/constants/float64/max-safe-integer]: https://github.com/stdlib-js/constants-float64-max-safe-integer/tree/esm
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/ops/imuldw]: https://github.com/stdlib-js/math-base-ops-imuldw
+[@stdlib/math/base/ops/imuldw]: https://github.com/stdlib-js/math-base-ops-imuldw/tree/esm
 
-[@stdlib/math/base/ops/umul]: https://github.com/stdlib-js/math-base-ops-umul
+[@stdlib/math/base/ops/umul]: https://github.com/stdlib-js/math-base-ops-umul/tree/esm
 
 <!-- </related-links> -->
 
