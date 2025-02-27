@@ -144,7 +144,7 @@ for ( i = 0xFFFFFFF0; i < 0xFFFFFFFF; i++ ) {
 ## See Also
 
 -   <span class="package-name">[`@stdlib/math-base/ops/imuldw`][@stdlib/math/base/ops/imuldw]</span><span class="delimiter">: </span><span class="description">compute the double word product of two signed 32-bit integers.</span>
--   <span class="package-name">[`@stdlib/math-base/ops/umul`][@stdlib/math/base/ops/umul]</span><span class="delimiter">: </span><span class="description">perform C-like multiplication of two unsigned 32-bit integers.</span>
+-   <span class="package-name">[`@stdlib/number-uint32/base/mul`][@stdlib/number/uint32/base/mul]</span><span class="delimiter">: </span><span class="description">perform C-like multiplication of two unsigned 32-bit integers.</span>
 
 </section>
 
@@ -176,7 +176,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -228,7 +228,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/math/base/ops/imuldw]: https://github.com/stdlib-js/math-base-ops-imuldw
 
-[@stdlib/math/base/ops/umul]: https://github.com/stdlib-js/math-base-ops-umul
+[@stdlib/number/uint32/base/mul]: https://github.com/stdlib-js/number-uint32-base-mul
 
 <!-- </related-links> -->
 
